@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>Prefeitura de Santos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <main id="formEntrar">
+        <div class="mensagem msgErro escondido">
+            <span class="material-symbols-outlined icone-mensagem">warning</span>
+            <span id="mensagemTexto">Login e/ou Senha Inválidos</span>
+        </div>
+        <p class="tituloEntrada">
+            <img src="images/logoBranco.png">
+        </p>
+        <p>
+            <label for="txtLogin">Login:</label>
+            <input type="text" name="txtLogin" id="txtLogin" placeholder="Digite seu email">
+        </p>
+        <p>
+            <label for="txtSenha">Senha:</label>
+            <input type="password" name="txtSenha" id="txtSenha" placeholder="Digite sua senha">
+        </p>
+        <a href="esqueceuSenha.html">Esqueceu a senha?</a>
+        <p>
+            <button id="btnEntrar"><span class="material-symbols-outlined">login</span> Entrar</button>
+        </p>
+    </main>
+    <script src="js/scriptLogar.js"></script>
+</body>
+</html>

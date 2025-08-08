@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+
+* { 
+    font-family: 'Coda', sans-serif; 
+    font-size:14px;
+    box-sizing: border-box;
+}
+
+.escondido { display: none !important; }
+
+.centro { text-align: center;}
+
+a
+{ 
+    text-decoration: none;
+}
+
+body 
+{ 
+    margin:0; 
+    padding:0; 
+    background-color: #DAE8D7;
+}
+
+header {
+    padding: 10px 20px;
+    text-align: right;
+    background-color: #F5F7F7;
+    color: #DAE8D7;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.conteudoHeader
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+#identificacao {
+    display: flex;
+    align-items: center;
+    color: #163517;
+}
+
+.botaoPadrao { 
+    color: #DAE8D7;
+    background-color: #163517;
+    padding: 8px 10px;
+    border:none;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+}
+
+main {
+    width: fit-content;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+}
+
+.titulo
+{
+    width: 100%;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 1.4rem;
+    color: #163517;
+    border-bottom: 3px solid #163517;
+
+}
+
+/* LOGIN */
+
+#formEntrar
+{
+    position: relative;
+    background-color: #163517;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: end;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    width: 380px;
+}
+
+.caixasSenha {
+    flex-direction: column !important;
+    justify-content: normal !important;
+    align-items: normal !important;
+}
+.caixasSenha > label {
+        width: 100% !important;
+}
+
+#formEntrar p 
+{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+#formEntrar p > label {
+    width: 60px;
+}
+#formEntrar p > input 
+{ 
+    flex-grow: 1;
+    padding: 5px 10px;
+    border:none;
+    border-radius: 4px;
+}
+
+#formEntrar a 
+{
+    color:white;
+    margin:5px 0 15px auto;
+    font-size:13px;
+}
+
+.tituloEntrada
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.iconeGrande
+{
+    font-size: 60px;
+}
+#botao{width:30% !important; margin:10px auto}
+
+button,.btnSalvar
+{
+    /* 
+    background-color: #fff;
+    color: #424547;
+    */
+    background-color: #F5F7F7;
+    color: #163517;
+    padding: 5px 10px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btnSalvar {
+    background-image: url('../images/save.png');
+    background-size:20px;
+    background-repeat: no-repeat;
+    background-position: left 8px center;
+    padding: 6px 10px 6px 20px !important;
+}
+
+/* MENSAGEM */
+
+.mensagem {
+    position: absolute;
+    width: inherit;
+    left: 50%;
+    bottom: -50px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transform: translate(-50%);
+}
+
+.msgSucesso { background-color: #43c35f; }
+.msgErro { background-color:#db4d4d; }
+
+.icone-mensagem { font-size:20px; }

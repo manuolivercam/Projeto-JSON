@@ -1,0 +1,32 @@
+.formulario-perfil {
+    margin-top:20px;
+    position: relative;
+}
+
+
+.formulario-perfil p {
+    display: flex;
+    align-items: center;
+}
+
+.formulario-perfil label {
+    display: inline-block;
+    width: 170px;    
+}
+
+.formulario-perfil input[type='text'], .formulario-perfil input[type='password'] {
+    border: thin solid #F5F7F7;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: -webkit-fill-available;
+}
+
+.formulario-perfil input[type='text']:disabled {
+    background-color: #F5F7F7;
+}
+
+.areaBotoesConfiguracao {
+    display: flex;
+    justify-content: center;
+}
+
